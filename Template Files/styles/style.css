@@ -1,0 +1,150 @@
+/* Resets ------ */ 
+
+/*
+http://www.sizmek.es/eb/users/javiegido_/__Demos/index.html?adid1=34890063&width1=300&height1=250&top1=510&left1=1030&urlBG=http%3A%2F%2Fwww.sizmek.es%2Feb%2Fusers%2Fjaviegido_%2F__Demos%2FCapturas%2FELMUNDO_ROBA.png&submit=
+*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, hgroup, menu, footer, header, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; } article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video { display: block; } a img {border: 0;}
+
+body {
+    margin: 0px;
+}
+#ad {
+    visibility: hidden;
+    position: relative;
+    display: block;
+    border: rgb(145, 153, 153) 1px solid;
+    overflow: hidden;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: -moz-none;
+        -ms-user-select: none;
+            user-select: none;
+}
+#ad.expanded{
+  width: 100%!important;
+  height: 100%!important;
+}
+#banner {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#ad.collapsed #closeButton, #ad.expanded #spinBox, #ad.collapsed #logoSizmek{
+  display: none;
+}
+
+#ad.expanded #logoSizmek{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: block;
+  z-index: 99;
+  cursor: pointer;
+}
+
+#closeButton{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 36px;
+  height: 36px;
+  background-image: url("../images/closeBtn.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 999999;
+}
+#expandBtn{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.video-container {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.centered{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+}
+video {
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+#spinBox{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 99;
+}
+#spinBox.hover {
+    background-color: rgba(0,0,0,.6);
+}
+
+#spinBox.hover .spinner{
+    visibility: visible!important;
+    -webkit-animation: rotation 3s infinite linear!important;
+            animation: rotation 3s infinite linear!important;
+}
+
+.spinner {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  border: 6px solid rgba(255,255,255, 0.15);
+  border-top: 6px solid rgba(255,255,255, 0.8);
+  border-radius: 100%;
+  visibility: hidden;
+}
+
+#countDown{
+  font-family: 'Arial';
+  color: rgba(255,255,255,.8);
+  font-size: 52px;
+  visibility: hidden;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(0deg);
+            transform: translateX(-50%) translateY(-50%) rotate(0deg);
+
+  }
+
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(1080deg);
+            transform: translateX(-50%) translateY(-50%) rotate(1080deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(0deg);
+            transform: translateX(-50%) translateY(-50%) rotate(0deg);
+
+  }
+
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(1080deg);
+            transform: translateX(-50%) translateY(-50%) rotate(1080deg);
+  }
+}

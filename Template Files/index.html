@@ -1,0 +1,33 @@
+<!doctype html> 
+<html> 
+<head> 
+<meta charset="utf-8"/> 
+<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+<title>MPU Video</title>
+<link rel="stylesheet" href="styles/style.css"/> 
+<script>EBModulesToLoad = ['Video','EBCMD'];</script>
+<script type="text/javascript" src="adConfig.js"></script>
+<script type="text/javascript" src="scripts/EBLoader.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+<script>EB.initExpansionParams(0, 0, 300, 250);</script>
+</head> 
+<body>
+	<div id="banner">
+		<div id="ad" class="collapsed">
+			<button id="closeButton" onclick="javascript:collapse();"></button>
+            <img id="logoSizmek" src="images/logo.png" alt="Logo Sizmek">
+			<div id="spinBox">
+                <div class="spinner centered"></div>
+                <span id="countDown" class="centered">3</span>
+            </div>
+            <div id="video-container" class="video-container centered">
+                <video id="video" class="centered" controls muted autoplay loop poster="images/poster.jpg">
+                    <source src="videos/video.mp4" type="video/mp4">
+                    <source src="videos/video.webm" type="video/webm">
+                    Your browser does not support the <code>video</code> element.
+                </video>
+            </div>
+		</div>
+	</div>
+</body> 
+</html>
