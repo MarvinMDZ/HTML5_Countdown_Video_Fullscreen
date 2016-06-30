@@ -1,14 +1,14 @@
-var adDiv;
-var bannerDiv;
-var logoDiv;
-var closeButton;
-var spinBox;
-var spinner;
-var countDown;
-var delayTime;
-var countDownTime;
-var videoContainer;
-var video;
+var adDiv,
+	bannerDiv,
+	logoDiv,
+	closeButton,
+	spinBox,
+	spinner,
+	countDown,
+	delayTime,
+	countDownTime,
+	videoContainer,
+	video;
 
 function startAd() {
 
